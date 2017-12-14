@@ -50,7 +50,7 @@ class ServiceContainer extends ContainerBuilder
      * @access public
      * @return void
      */
-    public function load()
+    public function load($file)
     {
         $loader = new YamlFileLoader($this, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('config.yml');
